@@ -17,3 +17,11 @@
 - [ ] Filtrarea functioneaza corect pentru toate statusurile
 - [ ] Datele persista dupa reload pagina
 - [ ] Interfata este responsive pe mobile
+
+## Criterii de acceptare — v1.1
+
+- [x] Filtrarea returneaza rezultate corecte pentru toate statusurile
+- [x] try-catch implementat pentru operatii critice
+- [x] Data se afiseaza in format DD/MM/YYYY
+- [ ] Teste automatizate pentru toate functiile principale
+- [ ] Export sarcini in format CSV
