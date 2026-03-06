@@ -1,0 +1,23 @@
+# Fisiere sistem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/settings.json
+*.swp
+*.swo
+
+# Dependinte
+node_modules/
+npm-debug.log
+
+# Build
+dist/
+build/
+*.min.js
+
+# Fisiere temporare
+*.tmp
+*.log
+.env
