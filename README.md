@@ -16,3 +16,8 @@ Aplicatie web simpla de gestionare a sarcinilor zilnice, construita cu HTML, CSS
 - JavaScript (ES5 Vanilla)
 
 ## Structura proiect
+
+
+
+## Status proiect
+Versiune curenta: 1.1.0 — In dezvoltare activa
