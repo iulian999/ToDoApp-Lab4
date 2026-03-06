@@ -19,7 +19,11 @@ function loadTodos() {
 
 function filterByStatus(status) {
   if (status === 'all') return todos;
-  if (status === 'active') return todos.filter(function(t) { return !t.done; });
-  if (status === 'done') return todos.filter(function(t) { return t.done; });
+  if (status === 'active') return todos.filter(function(t) {
+    return !t.done && t.text.trim() !== '';
+  });
+  if (status === 'done') return todos.filter(function(t) {
+    return t.done === true;
+  });
   return todos;
 }

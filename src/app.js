@@ -11,8 +11,27 @@ function addTodo() {
 
   if (input.value.trim() === '') {
     alert('Introduceti o sarcina!');
+    input.focus();
     return;
   }
+
+  try {
+    var todo = {
+      id: Date.now(),
+      text: input.value.trim(),
+      priority: priority,
+      done: false,
+      date: new Date().toLocaleDateString('ro-RO')
+    };
+    todos.push(todo);
+    saveTodos();
+    input.value = '';
+    renderList();
+  } catch (e) {
+    console.error('Eroare la adaugarea sarcinii:', e);
+    alert('A aparut o eroare. Reincercati.');
+  }
+}
 
   var todo = {
     id: Date.now(),
@@ -22,7 +41,7 @@ function addTodo() {
     date: new Date().toLocaleDateString('ro-RO')
   };
 
-  todos.push(todo);
+ { todos.push(todo);
   saveTodos();
   input.value = '';
   renderList();
