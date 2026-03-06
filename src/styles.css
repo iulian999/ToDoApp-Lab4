@@ -91,3 +91,18 @@ li.done {
 .priority-high { border-left: 4px solid #e53935; }
 .priority-medium { border-left: 4px solid #fb8c00; }
 .priority-low { border-left: 4px solid #43a047; }
+
+input[type="text"]:focus {
+  border: 2px solid #1a73e8;
+  outline: none;
+  background: #f0f7ff;
+}
+
+li:hover {
+  background: #f8f9fa;
+}
+
+select:focus {
+  border: 2px solid #1a73e8;
+  outline: none;
+}
