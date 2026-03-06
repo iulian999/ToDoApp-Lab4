@@ -21,8 +21,11 @@ function addTodo() {
       text: input.value.trim(),
       priority: priority,
       done: false,
-      date: new Date().toLocaleDateString('ro-RO')
-    };
+date: new Date().toLocaleDateString('ro-RO', {
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric'
+})    };
     todos.push(todo);
     saveTodos();
     input.value = '';
