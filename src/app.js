@@ -41,7 +41,7 @@ function addTodo() {
     date: new Date().toLocaleDateString('ro-RO')
   };
 
-  todos.push(todo);
+ { todos.push(todo);
   saveTodos();
   input.value = '';
   renderList();
